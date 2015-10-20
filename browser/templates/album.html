@@ -1,0 +1,16 @@
+<div class="album">
+	<p>
+		<h3>{{ album.name }} <a href="{{ generateMailTo() }}"><button class="btn btn-default btn-sm"><span class="glyphicon glyphicon-share"></span></button></a>
+		</h3>
+		<img ng-src="{{ album.imageUrl }}" class="img-thumbnail">
+	</p>
+
+	<table class='table'>
+
+		<song-list songs="album.songs">
+
+		</song-list>
+
+	</table>
+
+</div>
